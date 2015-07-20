@@ -24,29 +24,14 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     /**
      * This method is called when the app1 button is clicked.
      */
     public void clickApp1(View view) {
 
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Spotify Streamer app!";
-        int duration = Toast.LENGTH_SHORT;
+        CharSequence text = getString(R.string.toast_spotify_streamer);
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -58,8 +43,8 @@ public class MainActivity extends ActionBarActivity {
     public void clickApp2(View view) {
 
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Football Scores app!";
-        int duration = Toast.LENGTH_SHORT;
+        CharSequence text = getString(R.string.toast_football_scores);
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -71,8 +56,8 @@ public class MainActivity extends ActionBarActivity {
     public void clickApp3(View view) {
 
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Library app!";
-        int duration = Toast.LENGTH_SHORT;
+        CharSequence text = getString(R.string.toast_library);
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -84,8 +69,8 @@ public class MainActivity extends ActionBarActivity {
     public void clickApp4(View view) {
 
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Build It Bigger app!";
-        int duration = Toast.LENGTH_SHORT;
+        CharSequence text = getString(R.string.toast_build_it_bigger);
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -97,8 +82,8 @@ public class MainActivity extends ActionBarActivity {
     public void clickApp5(View view) {
 
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my XYZ Reader app!";
-        int duration = Toast.LENGTH_SHORT;
+        CharSequence text = getString(R.string.toast_xyz_reader);
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -110,8 +95,8 @@ public class MainActivity extends ActionBarActivity {
     public void clickApp6(View view) {
 
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my Capstone app!";
-        int duration = Toast.LENGTH_SHORT;
+        CharSequence text = getString(R.string.toast_capstone);
+        int duration = Toast.LENGTH_LONG;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
